@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+</head>
+<body>
+    <style>
+        body
+        {
+         align-items: center;
+         background:url(./IMAGES/V.jpg);
+         background-size:cover;
+        }
+        img{
+            align-items: center;
+           margin-left: 30%;        
+        }
+        </style>
+     <script>
+        function light(value)
+        {
+         var pic;
+         if(value==0)
+         pic="IMAGES/b1.jpg";
+         else
+         pic="IMAGES/b2.jpg";
+         document.getElementById('bulb').src=pic;
+        }
+        </script>
+   <img id="bulb" src="./IMAGES/b1.jpg">
+   <button onclick="light(1)">Turn on</button>
+   <button onclick="light(0)">Turn off</button>
+</body>
+</html>
